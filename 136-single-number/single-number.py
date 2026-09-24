@@ -1,19 +1,7 @@
-class Solution(object):
-    def singleNumber(self, nums):
-        res={}
-        for i in nums:
-            if i in res:
-                res[i]+=1
-            else:
-                res[i]=1
-
-        for i in nums:
-            if res[i]==1:
-                return i
-                
+class Solution:
+    def singleNumber(self, nums: list[int]) -> int:
+        result=0
+        for num in nums:
+            result=result^num
+        return result
         
-
-       
-            
-
-
