@@ -1,4 +1,5 @@
-class Solution(object):
-    def reverseString(self, s):
+class Solution:
+    def reverseString(self, s: list[str]) -> None:
         return s.reverse()
+        
         
